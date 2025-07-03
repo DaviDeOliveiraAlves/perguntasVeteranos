@@ -3,7 +3,7 @@ function mostrarPergunta(tipo) {
     if (tipo === "soft") {
         pergunta = "Como você lidaria com um prazo curto de entrega?";
     } else if (tipo === "hard") {
-        pergunta = "Qual sinal define algo como string em um código?";
+        pergunta = "Qual operador é usado para comparar igualdade em JavaScript?";
     }
 
     document.getElementById("pergunta").textContent ="🕵️" + pergunta;
@@ -11,6 +11,6 @@ function mostrarPergunta(tipo) {
     const resposta = prompt(pergunta);
 
     if (resposta) {
-        document.getElementById("resposta").textContent = "Sua resposta: " + resposta;
+        document.getElementById("resposta").textContent = "🕺Sua resposta: " + resposta;
     }
 }
